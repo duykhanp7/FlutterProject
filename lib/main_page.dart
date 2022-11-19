@@ -8,35 +8,40 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'l10n/generated/l10n.dart';
 
-class MainPage extends StatefulWidget{
+class MainPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
     return _MainPage();
   }
-
 }
 
-
-class _MainPage extends State<MainPage>{
+class _MainPage extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
       initialRoute: "/LoginPage",
       getPages: [
-        GetPage(name: "/LoginPage", page: () => LoginPage(),
-        binding: BindingsBuilder(() {
-          Get.lazyPut(() => LoginController());
-        },)),
-        GetPage(name: "/HomePage", page: () => HomePage(),)
+        GetPage(
+            name: "/LoginPage",
+            page: () => LoginPage(),
+            binding: BindingsBuilder(
+              () {
+                Get.lazyPut(() => LoginController());
+              },
+            )),
+        GetPage(
+          name: "/HomePage",
+          page: () => HomePage(),
+        )
       ],
       locale: Locale(AppStorage.getLanguages()),
-      localizationsDelegates: const [ 
-        SLocation.delegate, 
-        GlobalMaterialLocalizations.delegate, 
-        GlobalWidgetsLocalizations.delegate, 
-        GlobalCupertinoLocalizations.delegate, ], 
-        supportedLocales: const [Locale('vi'), Locale('en')], 
+      localizationsDelegates: const [
+        SLocation.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [Locale('vi'), Locale('en')],
     );
   }
-
 }

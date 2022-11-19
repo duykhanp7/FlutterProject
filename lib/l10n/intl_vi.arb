@@ -1,0 +1,11 @@
+{
+    "welcome_back": "Chào mừng trở lại",
+    "enter_your_email": "Nhập email của bạn",
+    "enter_your_password": "Nhập mật khẩu của bạn",
+    "login_button_text": "Đăng nhập",
+    "email_input": "Email: ",
+    "password_input": "Mật khẩu: ",
+    "change_email": "Đổi mật khẩu: ",
+    "lang_vietnamese": "Tiếng Việt: ",
+    "lang_english": "Tiếng Anh: "
+}

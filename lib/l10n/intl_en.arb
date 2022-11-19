@@ -1,0 +1,11 @@
+{
+    "welcome_back": "Welcome Back",
+    "enter_your_email": "Enter your email",
+    "enter_your_password": "Enter your password",
+    "login_button_text": "Login",
+    "email_input": "Email: ",
+    "password_input": "Password: ",
+    "change_email": "Change email: ",
+    "lang_vietnamese": "Vietnamese: ",
+    "lang_english": "English: "
+}
